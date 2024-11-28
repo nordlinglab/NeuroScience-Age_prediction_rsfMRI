@@ -33,6 +33,35 @@ The dataset comprises 176 healthy right-handed volunteers, aged 18-78 years, col
 │   └── [Generated outputs such as plots and metrics (example outputs included)]
 └── README.md                                # Repository overview
 ```
+
+## Usage
+
+### Prerequisites
+To run the code, ensure the following:
+- MATLAB (R2020b or later recommended)
+- Toolboxes: 
+  - Statistics and Machine Learning Toolbox
+  - Parallel Computing Toolbox
+
+### Running the Main Algorithm
+1. Place the required data file (`FC_10mm_correlation_ltria_180702.mat`) in the `data/` directory.
+2. Open the `Algorithm_regressor_count_clean.m` script in MATLAB.
+3. Run the script to:
+   - Execute the regressor count algorithm.
+   - Identify outliers.
+   - Evaluate and optimize predictive models.
+
+### Generating Results
+- **Output Files**: Results, such as figures and .mat files, are automatically saved in the `results/` directory.
+- **Visualization**: Generated plots include:
+  - Number of Regressors vs Leave-One-Out Mean Absolute Error (LOOMAE)
+  - Number of Subjects vs Selected LOOMAE
+
+### Experiments
+The `experiments/` directory contains additional scripts for exploratory analysis and validation. These include:
+- **Leave-One-Out Analysis**: Evaluate LOOMAE for model validation.
+- **Feature Reinteg
+
 ## Citation
 ```
 @article{Chang2024AgePrediction,
