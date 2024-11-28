@@ -32,9 +32,9 @@ The dataset comprises 176 healthy right-handed volunteers, aged 18-78 years, col
 ├── results/
 │   └── [Generated outputs such as plots and metrics (example outputs included)]
 └── README.md                                # Repository overview
-
+```
 ## Citation
-
+```
 @article{Chang2024AgePrediction,
   abstract = {The increasing lifespan and large individual differences in cognitive capability highlight the importance of comprehending the aging process of the brain. Contrary to visible signs of bodily ageing, like greying of hair and loss of muscle mass, the internal changes that occur within our brains remain less apparent until they impair function. Brain age, distinct from chronological age, reflects our brain's health status and may deviate from our actual chronological age. Notably, brain age has been associated with mortality and depression. The brain is plastic and can compensate even for severe structural damage by rewiring. Functional characterization offers insights that structural cannot provide. Contrary to the multitude of studies relying on structural magnetic resonance imaging (MRI), we utilize resting-state functional MRI (rsfMRI). We also address the issue of inclusion of subjects with abnormal brain ageing through outlier removal. In this study, we employ the Least Absolute Shrinkage and Selection Operator (LASSO) to identify the 39 most predictive correlations derived from the rsfMRI data. The data is from a cohort of 176 healthy right-handed volunteers, aged 18-78 years (95/81 male/female, mean age 48, SD 17) collected at the Mind Research Imaging Center at the National Cheng Kung University. We establish a normal reference model by excluding 68 outliers, which achieves a leave-one-out mean absolute error of 2.48 years. By asking which additional features that are needed to predict the chronological age of the outliers with a smaller error, we identify correlations predictive of abnormal aging. These are associated with the Default Mode Network (DMN). Our normal reference model has the lowest prediction error among published models evaluated on adult subjects of almost all ages and is thus a candidate for screening for abnormal brain aging that has not yet manifested in cognitive decline. This study advances our ability to predict brain aging and provides insights into potential biomarkers for assessing brain age, suggesting that the role of DMN in brain aging should be studied further.},
   annote = {We thank the Mind Research and Imaging Center (MRIC), supported by MOST, at NCKU for consultation and instru- ment availability.
@@ -54,3 +54,4 @@ The dataset comprises 176 healthy right-handed volunteers, aged 18-78 years, col
   volume = {22},
   year = {2024}
 }
+```
