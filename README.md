@@ -39,7 +39,7 @@ The dataset comprises 176 healthy right-handed volunteers, aged 18-78 years, col
 ### Prerequisites
 To run the code, ensure the following:
 - MATLAB (R2020b or later recommended)
-- Toolboxes: 
+- Toolboxes:
   - Statistics and Machine Learning Toolbox
   - Parallel Computing Toolbox
 
@@ -59,8 +59,10 @@ To run the code, ensure the following:
 
 ### Experiments
 The `experiments/` directory contains additional scripts for exploratory analysis and validation. These include:
-- **Leave-One-Out Analysis**: Evaluate LOOMAE for model validation.
-- **Feature Reinteg
+- **Feature Reintegration**: Iteratively refine features using residual analysis to optimize regression performance​(feature_selection_resid…)​(residual_based_feature_…).
+- **Residual-Based Feature Selection**: Leverage bootstrapping and LASSO regression to identify features that minimize prediction error while maintaining robustness against outliers​(residual_based_feature_…)​(Algo1_RegCount_contd).
+- **Clustering-Based Feature Analysis**: Perform agglomerative clustering on selected features to uncover meaningful patterns and relationships between variables​(agglomerative_clusterin…).
+- **Outlier Identification and Removal**: Identify and iteratively exclude subjects based on residuals and regression performance to improve model stability​(feature_selection_resid…)​(Algo1_RegCount_contd).
 
 ## Citation
 ```
@@ -84,3 +86,4 @@ The `experiments/` directory contains additional scripts for exploratory analysi
   year = {2024}
 }
 ```
+If you find this useful, kindly cite our paper. If you would like to collaborate on further research, kindly contact the corresponding author Dr. Nordling.
